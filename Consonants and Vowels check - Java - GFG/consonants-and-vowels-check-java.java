@@ -41,19 +41,16 @@ class GFG
 class Geeks{
     
     static void checkString(String s)
-    {int v=0;
+    {
+        int v=0;
         int c=0;
         
-        //Increment vowel count if 
-        //the character encountered is
-        //vowel, else incrementing the
-        //consonant count
-        for(int i=0;i<s.length();i++)
-        {
-            if(s.charAt(i)=='a'||s.charAt(i)=='i'||s.charAt(i)=='u'||s.charAt(i)=='e'||s.charAt(i)=='o')
-            v++;
-            else if(s.charAt(i)!='a'&&s.charAt(i)!='i'&&s.charAt(i)!='u'&&s.charAt(i)!='e'&&s.charAt(i)!='o'&&s.charAt(i)!=' ')
-            c++;
+        for(int i=0;i<s.length();i++){
+            if(s.charAt(i)=='a'||s.charAt(i)=='i'||s.charAt(i)=='u'||s.charAt(i)=='e'||s.charAt(i)=='o'){
+                v++;
+            }else if(s.charAt(i)!='a'&&s.charAt(i)!='i'&&s.charAt(i)!='u'&&s.charAt(i)!='e'&&s.charAt(i)!='o'&&s.charAt(i)!=' '){
+                c++;
+            }
         }
         
         if(v>c)
@@ -64,6 +61,7 @@ class Geeks{
        System.out.print("Same");
         
         System.out.println();
+        
     }
 }
 
